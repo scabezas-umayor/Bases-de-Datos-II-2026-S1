@@ -45,5 +45,18 @@ BEGIN
 END;
 ```
 
+Variables y tipos de datos: tipo caracter
+```
+DECLARE
+    v_nombre VARCHAR2(50);
+    v_sigla CHAR(4);
+BEGIN
+    v_nombre := 'Base de Datos II'; -- es dinamico y tendrá un tamaño maximo de 50 caracteres
+    v_sigla := 'BDII'; -- siempre utilizara en memoria el tamaño 4
+    DBMS_OUTPUT.PUT_LINE('[' || v_sigla  ||  '] ' || v_nombre);
+END;
+```
 
+```
 
+```
