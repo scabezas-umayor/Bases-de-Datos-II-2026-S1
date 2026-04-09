@@ -57,6 +57,12 @@ BEGIN
 END;
 ```
 
+Variables y tipos de datos: fecha
 ```
-
+DECLARE
+    v_fecha_hoy DATE := SYSDATE;
+    v_ahora     TIMESTAMP := SYSTIMESTAMP;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Fecha: [' || v_fecha_hoy  ||  '] ' || v_ahora);
+END;
 ```
